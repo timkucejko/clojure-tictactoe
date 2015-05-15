@@ -4,8 +4,10 @@
 
 (if (= (nth board 0) "y") "yes" "no")
 
+(def test-path ["x" 1 2])
+(if (= (nth test-path 0) "x") println "x has the square!")
 
-(for [win-path winning-patterns] (println win-path))
+;;(for [win-path winning-patterns] (if (= nth board (nth win-path 0))))
 
 (comment
 ways to win:
